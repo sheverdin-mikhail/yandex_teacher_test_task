@@ -1,0 +1,17 @@
+.header {
+    margin-bottom: 20px;
+}
+
+.main {
+    flex: 1 1 100%;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

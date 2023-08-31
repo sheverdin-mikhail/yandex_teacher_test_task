@@ -1,0 +1,19 @@
+.link:not(:last-child) {
+    margin-right: 20px;
+}
+
+.links {
+    display: flex;
+}
+
+.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.gitLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
