@@ -1,10 +1,10 @@
 .MainPage {
-    padding-top: 200px;
 }
 
 .img {
     max-width: 50%;
     margin: 0 10px;
+    margin-top: -50px;
     border-radius: 100%;
 }
 
@@ -17,10 +17,9 @@
 
 .text {
     display: block;
-    position: absolute;
+    position: relative;
     font-size: 23px;
     line-height: 130%;
-    margin: 0 10px;
     background: var(--main-color-light);
     color: var(--main-color);
     padding: 20px;
@@ -29,7 +28,6 @@
     max-width: 50%;
     margin-bottom: 10px;
     box-shadow: 4px 0px 10px 0px rgba(0,0,0, 0.6);
-    transform: translate(5%, -80%);
 }
 
 .column {
@@ -42,35 +40,4 @@
     border-radius: 23px;
     margin-top: 50px;
     padding: 20px;
-}
-
-.arrow {
-    display: block;
-    position: absolute;
-    transform: translateX(50%);
-    top: 50%;
-    right: 30%;
-}
-
-
-.arrow:hover {
-    cursor: pointer;
-}
-
-.arrow path {
-    stroke: var(--main-color);
-    stroke-width: 10;
-    stroke-dashoffset: 1500;
-    stroke-dasharray: 1500;
-    animation: draw 5s linear forwards;
-}
-
-
-
-@keyframes draw {
-
-    100%{
-        stroke-dashoffset: 0;
-    }
-
 }

@@ -1,7 +1,6 @@
 import cls from './MainPage.module.css';
 import Photo_1 from '../../shared/assets/img/img1.jpg'
 import Video from '../../shared/assets/video/video.mp4'
-import { ReactComponent as Arrow } from '../../shared/assets/icons/arrow.svg'
 import { ClassNames } from '../../shared/lib/ClassNames/ClassNames';
 import { Suspense } from 'react';
 import VideoPlayer from '../../widgets/VideoPlayer/VideoPlayer';
@@ -23,10 +22,7 @@ export const MainPage = (props) => {
         }]
     };
 
-   function ScrollToVideoHandler(){
-        const videoPlayer = document.getElementById('videoPlayer')
-        videoPlayer.scrollIntoView({behavior: 'smooth'})
-   }
+   
 
     return (
         <div className={ClassNames(cls.MainPage, {}, [className, 'container'])}>
@@ -40,7 +36,6 @@ export const MainPage = (props) => {
                     Ну и сразу же попросил научить меня программированию, он мне сказал, попробуй поизучать HTML и CSS... Так я и полюбил программирование. 
                 </p>
                 <img className={cls.img} src={Photo_1} alt="it's me :)" />
-                <Arrow className={cls.arrow} onClick={()=>ScrollToVideoHandler()}/>
             </div>
             
             <div className={cls.video} id='videoPlayer'>

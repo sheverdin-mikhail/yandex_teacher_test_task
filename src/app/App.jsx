@@ -12,6 +12,7 @@ function App() {
         <Route element={<Layout/>} path='/'>
           <Route element={<MainPage/>} path='/' />
           <Route element={<SecondPage/>} path='/enjoy' />
+          <Route element={<MainPage/>} path='*' />
         </Route>
      </Routes>
     </div>
