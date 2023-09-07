@@ -8,7 +8,7 @@ export const Layout = (props) => {
     return (
         <div className={cls.wrapper}>
             <Header className={cls.header} />
-            <div className={ClassNames(cls.main, {}, ["container"])}>
+            <div className={ClassNames(cls.main, {}, [])}>
                 <Outlet/>
             </div>
             <Footer className={cls.footer} />

@@ -19,8 +19,8 @@
     display: block;
     position: absolute;
     font-size: 23px;
+    line-height: 130%;
     margin: 0 10px;
-    line-height: 110%;
     background: var(--main-color-light);
     color: var(--main-color);
     padding: 20px;
@@ -62,17 +62,14 @@
     stroke-width: 10;
     stroke-dashoffset: 1500;
     stroke-dasharray: 1500;
-    animation: draw 10s linear infinite;
+    animation: draw 5s linear forwards;
 }
 
-.arrow:hover > path {
-    stroke-dashoffset: 0;
-}
 
 
 @keyframes draw {
 
-    25%, 75%{
+    100%{
         stroke-dashoffset: 0;
     }
 

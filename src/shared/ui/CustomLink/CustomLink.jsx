@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import cls from './CustomLink.module.css';
 import { useEffect, useState } from 'react';
-import { ClassNames } from '../lib/ClassNames/ClassNames';
+import { ClassNames } from '../../lib/ClassNames/ClassNames';
 
 export const CustomLink = (props) => {
     const { className, to, children } = props;

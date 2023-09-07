@@ -1,5 +1,5 @@
 import cls from './Navigation.module.css';
-import { CustomLink } from '../../shared/CustomLink/CustomLink';
+import { CustomLink } from '../../shared/ui/CustomLink/CustomLink';
 import IGithub from '../../shared/assets/icons/git-icon.png'
 
 export const Navigation = (props) => {
